@@ -1,0 +1,3 @@
+Persoana: Explorer, Andrei, Alexandru, București, 35, false
+Persoana: Explorer, Vasile, Maria, București, 20, false
+Persoana: Trainer, Popescu, Diana, Cluj, 45, true
