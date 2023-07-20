@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Basic -->
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<!-- Site Metas -->
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<link rel="shortcut icon" href="images/favicon.png" type="">
+
+<title> Dashboard </title>
+
+<!-- bootstrap core css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+<!-- fonts style -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<!--owl slider stylesheet -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+<!-- font awesome style -->
+<link href="css/font-awesome.min.css" rel="stylesheet" />
+
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet" />
+<!-- responsive style -->
+<link href="css/responsive.css" rel="stylesheet" />
+<link href="css/newheader.css" rel="stylesheet" />
+
+<!--external links-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js">
+</script>
+    <!--End Of external links-->
+
+<!--timer links and js-->
+<script>
+      $(function() {
+      // Countdown timer
+      var minutes = 50;
+      var seconds = 0;
+      var timerElement = $(".timer");
+      setInterval(function() {
+        if (seconds > 0) {
+          seconds--;
+        } else if (minutes > 0) {
+          minutes--;
+          seconds = 59;
+        } else {
+          alert("Time's up!");
+        }
+        timerElement.text(minutes + ":" + (seconds < 10 ? "0" : "") + seconds);
+      }, 1000);
+      // Tooltips
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+    $(function() {
+      // Countdown timer
+      var minutes = 50;
+      var seconds = 0;
+      var timerElement = $(".timer");
+      setInterval(function() {
+        if (seconds > 0) {
+          seconds--;
+        } else if (minutes > 0) {
+          minutes--;
+          seconds = 59;
+        } else {
+          alert("Time's up!");
+        }
+        timerElement.text(minutes + ":" + (seconds < 10 ? "0" : "") + seconds);
+      }, 1000);
+      // Tooltips
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+<!--End Of Timer Links and Js-->
+
+    <!--Style for chat-->
+<style>
+  body {
+      padding: 20px;
+    }
+    .chat-box {
+      height: 300px;
+      overflow-y: scroll;
+    }
+    .timer {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+</style>
+<!--End Of Style for chat-->
+</head>
+<body style="background-image: url('images/hero-bg.png'); 
+background-size: cover; background-position: center;height: 100vh;">
+      
+
+    <!-- header section strats -->
+    <div class=" container d-flex flex-row-reverse text-white pr-4 pt-4 ">
+      <a href="" class="text-white">
+          <i class="fa fa-sign-out pl-2 pt-1"></i>Sign out
+      </a>
+      
+      <i class="fa fa-user pl-2 pt-1 pr-4" aria-hidden="true"></i>
+      <p class="">Welcome to: <span>John Doe</span></p>
+    </div>
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              OnlineDoc
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dashboard.html"> Transactions Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Doctors Directory</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Consult a doctor
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Ask a doctor online</a>
+                      <a class="dropdown-item" href="#">Video consultation</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Chat with a doctor online</a>
+                  </div>
+              </li>
+
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-header bg-dark text-white">
+              Chat with my doctor
+            </div>
+            <div class="card-body chat-box">
+              <!-- Chat messages will be displayed here -->
+            </div>
+            <div class="card-footer">
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Type your message...">
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="timer">
+                    50:00
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-secondary mr-2" data-toggle="tooltip" data-placement="bottom" title="Attach file">
+                      <i class="fa fa-paperclip"></i>
+                    </button>
+                    <button type="button" class="btn btn-secondary mr-2" data-toggle="tooltip" data-placement="bottom" title="Add emoji">
+                      <i class="fa fa-smile-o"></i>
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Start voice chat">
+                      <i class="fa fa-phone"></i>
+                    </button>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-dark mt-2">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div name="medic_card" class="container mt-4">
+            <!--Profile photo-->
+            <div class="media mb-2">
+              <img src="images/client.jpg" class="border rounded" alt="..." style="max-width: 100px; height: auto;">    
+            </div>
+            <!--End Of Profile photo-->
+            <div class="card"> 
+              <h5 class="card-header">Dr. Manu Emilian</h5>
+              <div class="row">
+                <!--Doctor Details-->
+                <div class="card-body col-md-4">
+                  <h5 class="card-title">GENERAL MEDICINE, GENERAL SURGERY</h5>
+                  <p class="card-text">Experience: + 21 Years</p>
+                  <div class="card-row">
+                    <a href="#" class="btn btn-secondary mb-2">GENERAL MEDICINE</a>
+                    <a href="#" class="btn btn-secondary">ONSTETRICS AND GYNECOLOGY</a>
+                  </div>
+                  <p class="card-text">Consulting languages: Romanian, English </p>
+                </div>
+                <!--End Of Doctor Details-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+</body>
+</html>
